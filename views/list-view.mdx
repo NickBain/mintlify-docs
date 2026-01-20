@@ -1,0 +1,126 @@
+---
+title: "List View"
+description: "View and manage items in a structured list with hierarchy"
+---
+
+## Overview
+
+The List View displays all your roadmap items in a structured, expandable list format. It's ideal for reviewing details, managing large numbers of items, and understanding hierarchical relationships.
+
+<Frame>
+  <img src="/images/placeholder-list-view.png" alt="List View" />
+  {/* TODO: Add screenshot of List View */}
+</Frame>
+
+## Key Features
+
+### Hierarchical Display
+
+Items are displayed with their parent-child relationships:
+
+- **Indent levels**: Child items are indented under their parents
+- **Expand/Collapse**: Click the arrow to show or hide children
+- **Expand All / Collapse All**: Use toolbar buttons to expand or collapse everything
+
+### Grouping Options
+
+Group items by different dimensions using the grouping selector:
+
+| Grouping | Description |
+|----------|-------------|
+| **Product** | Group by product, then product area |
+| **Product Area** | Group directly by product area |
+| **Strategic Priority** | Group by priority level |
+| **Item Type** | Group by Initiative, Epic, Story, etc. |
+
+### Columns
+
+The list displays key information in columns:
+
+- **Name**: Item title with expand/collapse control
+- **Type**: Item type badge (Initiative, Epic, Story, Task, Bug)
+- **Dates**: Start and end dates
+- **Product Area**: Assigned product area
+- **Priority**: Strategic priority alignment
+
+<Frame>
+  <img src="/images/placeholder-list-columns.png" alt="List View Columns" />
+  {/* TODO: Add screenshot showing list columns */}
+</Frame>
+
+## Interacting with Items
+
+### Selecting Items
+
+- **Single click**: Select an item and open its detail panel
+- **Multi-select**: Hold `Cmd` (Mac) or `Ctrl` (Windows) and click multiple items
+
+### Editing Inline
+
+Some fields can be edited directly in the list:
+
+1. Click on a cell to enter edit mode
+2. Make your changes
+3. Press `Enter` or click away to save
+
+### Drag and Drop
+
+Reorder items or change hierarchy by dragging:
+
+1. Click and hold on an item
+2. Drag to a new position
+3. Drop to reorder or nest under a new parent
+
+## Filtering
+
+Use the filter bar to narrow down the displayed items:
+
+<Frame>
+  <img src="/images/placeholder-list-filters.png" alt="List View Filters" />
+  {/* TODO: Add screenshot of filter bar in list view */}
+</Frame>
+
+Filter options include:
+- Item type
+- Product area
+- Date range
+- Strategic priority
+- Custom fields
+
+<Info>
+  Filters persist when switching between views. See [Using Filters](/filters/using-filters) for details.
+</Info>
+
+## Export
+
+Export your list view to share with stakeholders:
+
+- **PDF**: A formatted document with all visible items
+- **Image**: A snapshot of the current list state
+
+See [Export Options](/sharing/export-options) for more details.
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Bulk Review">
+    Use Expand All to see every item, then use filters to focus on specific areas.
+  </Accordion>
+  <Accordion title="Hierarchy Management">
+    Drag and drop items to quickly reorganize your hierarchy without opening each item.
+  </Accordion>
+  <Accordion title="Status Updates">
+    Group by item type to quickly review and update all items of a specific type.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Timeline View" icon="calendar" href="/views/timeline-view">
+    See items on a visual timeline.
+  </Card>
+  <Card title="Item Hierarchy" icon="sitemap" href="/items/item-hierarchy">
+    Learn more about parent-child relationships.
+  </Card>
+</CardGroup>

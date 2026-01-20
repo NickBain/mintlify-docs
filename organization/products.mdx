@@ -1,0 +1,177 @@
+---
+title: "Products & Product Areas"
+description: "Organize your roadmap by product and product area"
+---
+
+## Overview
+
+Products and Product Areas help you organize roadmap items into logical groupings. This is especially useful for teams working on multiple products or large products with distinct areas.
+
+<Frame>
+  <img src="/images/placeholder-products.png" alt="Products and Product Areas" />
+  {/* TODO: Add screenshot showing products and product areas */}
+</Frame>
+
+## Understanding the Structure
+
+### Products
+
+Products are top-level organizational units:
+
+- **Example**: "Web App", "Mobile App", "API Platform"
+- Use when you have multiple distinct products
+- Each product can contain multiple product areas
+
+### Product Areas
+
+Product Areas are sub-divisions within a product:
+
+- **Example**: "Authentication", "Dashboard", "Reporting", "Billing"
+- Items are assigned to product areas
+- Product areas appear as swimlanes on the Timeline View
+
+```
+Product: Web App
+├── Product Area: User Management
+├── Product Area: Dashboard
+└── Product Area: Reporting
+
+Product: Mobile App
+├── Product Area: iOS
+└── Product Area: Android
+```
+
+## Managing Products
+
+### Creating a Product
+
+<Steps>
+  <Step title="Open Settings">
+    Navigate to workspace settings or use the sidebar.
+  </Step>
+  <Step title="Select Products">
+    Click on the **Products** section.
+  </Step>
+  <Step title="Add Product">
+    Click **+ Add Product** and enter the product name.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/placeholder-add-product.png" alt="Add Product" />
+  {/* TODO: Add screenshot of adding a product */}
+</Frame>
+
+### Editing Products
+
+1. Open the Products settings
+2. Click on a product name
+3. Update the name or other properties
+4. Save changes
+
+### Deleting Products
+
+1. Open the Products settings
+2. Click the delete icon next to a product
+3. Confirm deletion
+
+<Warning>
+  Deleting a product will not delete associated items, but items will lose their product area assignment.
+</Warning>
+
+## Managing Product Areas
+
+### Creating a Product Area
+
+<Steps>
+  <Step title="Select Parent Product">
+    Choose the product this area belongs to.
+  </Step>
+  <Step title="Add Product Area">
+    Click **+ Add Product Area** within the product.
+  </Step>
+  <Step title="Configure">
+    Enter the name and optionally set a color.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/placeholder-add-product-area.png" alt="Add Product Area" />
+  {/* TODO: Add screenshot of adding a product area */}
+</Frame>
+
+### Product Area Colors
+
+Each product area can have a custom color that appears in:
+
+- Timeline View swimlanes
+- Item badges and cards
+- Filters and grouping
+
+## Assigning Items to Product Areas
+
+### Single Item
+
+1. Open the item detail panel
+2. Click the **Product Area** dropdown
+3. Select a product area
+
+### Bulk Assignment
+
+1. Select multiple items
+2. Click **Edit Selected**
+3. Set the product area for all selected items
+
+## Timeline Swimlanes
+
+When grouped by Product Area, the Timeline View displays swimlanes:
+
+<Frame>
+  <img src="/images/placeholder-swimlane-view.png" alt="Swimlane View" />
+  {/* TODO: Add screenshot of swimlane view */}
+</Frame>
+
+- Each swimlane represents a product area
+- Items without a product area appear in an "Unassigned" swimlane
+- Collapse/expand swimlanes to focus on specific areas
+
+## Filtering by Product Area
+
+Use filters to focus on specific areas:
+
+1. Open the filter bar
+2. Click **Product Area**
+3. Select one or more product areas
+4. View only items in those areas
+
+<Info>
+  Filters persist when switching between views. See [Using Filters](/filters/using-filters) for more details.
+</Info>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Match Your Team Structure">
+    Align product areas with team ownership for clear accountability.
+  </Accordion>
+  <Accordion title="Keep It Simple">
+    Start with fewer, broader product areas and add more as needed.
+  </Accordion>
+  <Accordion title="Use Consistent Colors">
+    Choose a color palette that's easy to distinguish across your product areas.
+  </Accordion>
+  <Accordion title="Review Regularly">
+    Update product areas as your product evolves to keep the structure relevant.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Strategic Priorities" icon="bullseye" href="/organization/strategic-priorities">
+    Align items with strategic priorities.
+  </Card>
+  <Card title="Timeline View" icon="calendar" href="/views/timeline-view">
+    See product areas as swimlanes.
+  </Card>
+</CardGroup>

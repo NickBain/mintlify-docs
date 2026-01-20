@@ -1,0 +1,169 @@
+---
+title: "Editing Items"
+description: "Update, modify, and manage your roadmap items"
+---
+
+## Overview
+
+Keep your roadmap up to date by editing item properties, adjusting dates, and managing relationships.
+
+## Opening Item Details
+
+Access an item's editable properties by:
+
+- **Single click** on any item in any view
+- **Right-click** and select **Edit**
+- **Keyboard shortcut**: Select item and press `Enter`
+
+<Frame>
+  <img src="/images/placeholder-edit-item.png" alt="Edit Item Panel" />
+  {/* TODO: Add screenshot of the item detail panel */}
+</Frame>
+
+## Editable Properties
+
+### Basic Information
+
+| Field | Description |
+|-------|-------------|
+| **Name** | Item title - click to edit inline |
+| **Description** | Full description, supports rich text |
+| **Type** | Change item type (Initiative, Epic, etc.) |
+
+### Dates
+
+| Field | Description |
+|-------|-------------|
+| **Start Date** | When work begins |
+| **End Date** | Target completion date |
+
+<Tip>
+  On the Timeline View, drag item edges to quickly adjust dates visually.
+</Tip>
+
+### Organization
+
+| Field | Description |
+|-------|-------------|
+| **Product Area** | Assign to a product area |
+| **Parent** | Set or change parent item |
+| **Strategic Priority** | Link to a priority |
+| **Goal** | Associate with a goal |
+
+## Inline Editing
+
+Some views support quick inline editing:
+
+### Timeline View
+
+- **Drag to move**: Click and drag an item to change its date range
+- **Drag edges**: Resize items to adjust start/end dates
+- **Double-click**: Quick edit item name
+
+### List View
+
+- **Click cell**: Edit values directly in list columns
+- **Tab**: Move between fields
+- **Enter**: Save changes
+
+### Kanban View
+
+- **Drag cards**: Move between columns to change status
+
+## Bulk Editing
+
+Edit multiple items at once:
+
+<Steps>
+  <Step title="Select Multiple Items">
+    Hold `Cmd` (Mac) or `Ctrl` (Windows) and click items to select.
+  </Step>
+  <Step title="Open Bulk Edit">
+    Click the **Edit Selected** button in the toolbar.
+  </Step>
+  <Step title="Apply Changes">
+    Modify properties that should apply to all selected items.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/placeholder-bulk-edit.png" alt="Bulk Edit" />
+  {/* TODO: Add screenshot of bulk edit interface */}
+</Frame>
+
+## Duplicating Items
+
+Create a copy of an existing item:
+
+1. Right-click on the item
+2. Select **Duplicate**
+3. A copy is created with "(Copy)" appended to the name
+
+<Info>
+  Duplicating an item does not copy its children. Only the selected item is duplicated.
+</Info>
+
+## Deleting Items
+
+Remove items you no longer need:
+
+### Single Item
+
+1. Right-click on the item
+2. Select **Delete**
+3. Confirm the deletion
+
+### Multiple Items
+
+1. Select multiple items
+2. Press `Delete` or click **Delete Selected**
+3. Confirm the deletion
+
+<Warning>
+  Deleting a parent item will orphan its children (they become top-level items). To delete the entire hierarchy, delete children first or select all items to delete.
+</Warning>
+
+## Undo/Redo
+
+Made a mistake? Use undo to revert changes:
+
+- **Undo**: `Cmd + Z` (Mac) or `Ctrl + Z` (Windows)
+- **Redo**: `Cmd + Shift + Z` (Mac) or `Ctrl + Shift + Z` (Windows)
+
+## Change History
+
+Track changes made to items:
+
+1. Open the item detail panel
+2. Click the **History** tab
+3. View a log of all changes with timestamps
+
+<Frame>
+  <img src="/images/placeholder-change-history.png" alt="Change History" />
+  {/* TODO: Add screenshot of change history */}
+</Frame>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Keep Items Updated">
+    Regularly review and update item dates and statuses to maintain an accurate roadmap.
+  </Accordion>
+  <Accordion title="Use Descriptions">
+    Add detailed descriptions to items for context, especially for initiatives and epics.
+  </Accordion>
+  <Accordion title="Review Before Delete">
+    Check for children and dependencies before deleting items to avoid unintended data loss.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Creating Items" icon="plus" href="/items/creating-items">
+    Add new items to your roadmap.
+  </Card>
+  <Card title="Item Hierarchy" icon="sitemap" href="/items/item-hierarchy">
+    Manage parent-child relationships.
+  </Card>
+</CardGroup>

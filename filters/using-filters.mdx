@@ -1,0 +1,131 @@
+---
+title: "Using Filters"
+description: "Focus on specific items with the filter bar"
+---
+
+## Overview
+
+The filter bar allows you to narrow down the items displayed in any view. Apply filters to focus on specific item types, product areas, date ranges, and more.
+
+<Frame>
+  <img src="/images/placeholder-filter-bar.png" alt="Filter Bar" />
+  {/* TODO: Add screenshot of the filter bar */}
+</Frame>
+
+## Accessing Filters
+
+The filter bar appears at the top of every view:
+
+1. Click on a filter dropdown to see options
+2. Select values to filter by
+3. Items are filtered instantly
+
+## Available Filters
+
+| Filter | Description |
+|--------|-------------|
+| **Item Type** | Initiative, Epic, Story, Task, Bug |
+| **Product Area** | Filter by assigned product area |
+| **Product** | Filter by parent product |
+| **Strategic Priority** | Filter by priority alignment |
+| **Goal** | Filter by linked goal |
+| **Date Range** | Show items within a time period |
+
+## Applying Filters
+
+### Single Selection
+
+1. Click a filter dropdown
+2. Select a single value
+3. View updates to show matching items
+
+### Multiple Selection
+
+1. Click a filter dropdown
+2. Select multiple values (checkboxes)
+3. Items matching ANY selected value are shown
+
+<Frame>
+  <img src="/images/placeholder-multi-select-filter.png" alt="Multi-Select Filter" />
+  {/* TODO: Add screenshot of multi-select filter */}
+</Frame>
+
+### Date Range Filter
+
+Filter items by their dates:
+
+1. Click the **Date Range** filter
+2. Select start and end dates
+3. Items overlapping with this range are shown
+
+<Tip>
+  Use date range filtering to focus on upcoming quarters or sprints.
+</Tip>
+
+## Combining Filters
+
+Filters work together with AND logic:
+
+- **Item Type = Story** AND **Product Area = Dashboard**
+- Only stories in the Dashboard product area are shown
+
+<Frame>
+  <img src="/images/placeholder-combined-filters.png" alt="Combined Filters" />
+  {/* TODO: Add screenshot showing combined filters */}
+</Frame>
+
+## Clearing Filters
+
+### Clear Individual Filter
+
+1. Click the X on a filter chip
+2. That filter is removed
+
+### Clear All Filters
+
+1. Click **Clear All** in the filter bar
+2. All filters are removed, showing all items
+
+## Filter Persistence
+
+Filters persist across views:
+
+- Apply a filter in Timeline View
+- Switch to List View
+- The same filter remains active
+
+<Info>
+  Filters are saved per session. They reset when you reload the page unless you save them as a default view.
+</Info>
+
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Cmd + F` / `Ctrl + F` | Focus filter bar |
+| `Escape` | Close filter dropdown |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Focus Sessions">
+    Use filters during planning to focus on one product area or priority at a time.
+  </Accordion>
+  <Accordion title="Status Reviews">
+    Filter by item type to review all epics or all bugs in one view.
+  </Accordion>
+  <Accordion title="Timeline Cleanup">
+    Filter to upcoming quarter to keep the timeline view focused on relevant work.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Saved Views" icon="bookmark" href="/filters/saved-views">
+    Save filter configurations for quick access.
+  </Card>
+  <Card title="Timeline View" icon="calendar" href="/views/timeline-view">
+    Apply filters to your timeline.
+  </Card>
+</CardGroup>

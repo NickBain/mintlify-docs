@@ -1,0 +1,89 @@
+---
+title: "Core Concepts"
+description: "Understand the building blocks of Wey Roadmap"
+---
+
+## Overview
+
+Wey Roadmap is built around a few key concepts that work together to help you plan and communicate your product strategy.
+
+<Frame>
+  <img src="/images/placeholder-concepts-overview.png" alt="Core Concepts Overview" />
+  {/* TODO: Add diagram showing relationship between concepts */}
+</Frame>
+
+## Item Types
+
+Items are the building blocks of your roadmap. Wey supports a hierarchical structure of item types:
+
+| Item Type | Purpose | Example |
+|-----------|---------|---------|
+| **Initiative** | Large strategic efforts spanning multiple quarters | "Mobile App Launch" |
+| **Epic** | Major features or deliverables within an initiative | "User Authentication" |
+| **Story** | User-facing functionality | "As a user, I can reset my password" |
+| **Task** | Specific work items | "Implement password reset API" |
+| **Bug** | Issues to be fixed | "Login button unresponsive on iOS" |
+
+<Tip>
+  Items can have parent-child relationships. For example, an Epic can contain multiple Stories, and each Story can have Tasks.
+</Tip>
+
+## Organizational Structure
+
+### Products & Product Areas
+
+Organize your roadmap by product and product area:
+
+- **Products**: Top-level grouping (e.g., "Web App", "Mobile App", "API")
+- **Product Areas**: Sub-divisions within a product (e.g., "Authentication", "Dashboard", "Reporting")
+
+### Strategic Priorities
+
+Strategic priorities represent your organization's key focus areas. Items can be linked to priorities to show how work aligns with strategy.
+
+### Goals
+
+Goals are specific, measurable objectives that sit under strategic priorities. They help track progress toward your priorities.
+
+## Views
+
+Wey Roadmap offers multiple ways to visualize your data:
+
+<AccordionGroup>
+  <Accordion title="Timeline View" icon="calendar">
+    A Gantt-style view showing items on a timeline. Perfect for planning sprints, quarters, or long-term roadmaps. Items can be grouped by product area, priority, or goal.
+  </Accordion>
+  <Accordion title="List View" icon="list">
+    A structured list view with expandable hierarchy. Great for detailed review of all items and their relationships.
+  </Accordion>
+  <Accordion title="Kanban View" icon="columns">
+    A column-based view for workflow management. Useful for tracking item status and moving work through stages.
+  </Accordion>
+  <Accordion title="Hierarchy View" icon="sitemap">
+    A flow diagram showing parent-child relationships between items. Ideal for understanding dependencies and structure.
+  </Accordion>
+</AccordionGroup>
+
+## Workspaces
+
+Workspaces are isolated environments for your roadmaps. Each workspace has its own:
+
+- Items and hierarchy
+- Products and product areas
+- Strategic priorities and goals
+- Team members and permissions
+
+<Info>
+  You can create multiple workspaces for different products, teams, or clients.
+</Info>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Create Items" icon="plus" href="/items/creating-items">
+    Learn how to add items to your roadmap.
+  </Card>
+  <Card title="Set Up Products" icon="box" href="/organization/products">
+    Organize your roadmap by product area.
+  </Card>
+</CardGroup>

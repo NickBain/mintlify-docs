@@ -1,0 +1,162 @@
+---
+title: "Creating Items"
+description: "Add initiatives, epics, stories, tasks, and bugs to your roadmap"
+---
+
+## Overview
+
+Items are the building blocks of your roadmap. Wey Roadmap supports five item types, each serving a different purpose in your product planning hierarchy.
+
+## Item Types
+
+| Type | Icon | Purpose | Example |
+|------|------|---------|---------|
+| **Initiative** | 🎯 | Large strategic efforts | "Mobile App Launch Q2" |
+| **Epic** | 📦 | Major features or deliverables | "User Authentication System" |
+| **Story** | 📘 | User-facing functionality | "As a user, I can reset my password" |
+| **Task** | ✅ | Specific work items | "Implement password reset API" |
+| **Bug** | 🐛 | Issues to be fixed | "Login button unresponsive on iOS" |
+
+## Creating a New Item
+
+### Method 1: Add Item Button
+
+1. Click the **+ Add Item** button in the toolbar
+2. Select the item type from the dropdown
+3. Fill in the item details
+
+<Frame>
+  <img src="/images/placeholder-add-item-button.png" alt="Add Item Button" />
+  {/* TODO: Add screenshot of Add Item button and dropdown */}
+</Frame>
+
+### Method 2: Quick Add (Timeline View)
+
+1. Double-click on the timeline at your desired start date
+2. Enter the item name
+3. Set the item type and other details
+
+### Method 3: Context Menu
+
+1. Right-click on an existing item
+2. Select **Add Child Item** to create a child
+3. Select the item type and enter details
+
+<Frame>
+  <img src="/images/placeholder-context-menu.png" alt="Context Menu" />
+  {/* TODO: Add screenshot of context menu */}
+</Frame>
+
+## Item Properties
+
+When creating an item, you can set the following properties:
+
+### Required Fields
+
+| Field | Description |
+|-------|-------------|
+| **Name** | The item's display title |
+| **Type** | Initiative, Epic, Story, Task, or Bug |
+
+### Optional Fields
+
+| Field | Description |
+|-------|-------------|
+| **Description** | Detailed description or user story |
+| **Start Date** | When work begins |
+| **End Date** | Target completion date |
+| **Product Area** | Assign to a product area |
+| **Parent** | Link to a parent item |
+| **Strategic Priority** | Align to a strategic priority |
+| **Goal** | Link to a specific goal |
+
+<Frame>
+  <img src="/images/placeholder-item-form.png" alt="Item Form" />
+  {/* TODO: Add screenshot of the item creation form */}
+</Frame>
+
+## Setting Dates
+
+Items can have start and end dates to appear on the timeline:
+
+<Steps>
+  <Step title="Open Item Details">
+    Click on an item to open its detail panel.
+  </Step>
+  <Step title="Set Start Date">
+    Click the start date field and select a date from the calendar.
+  </Step>
+  <Step title="Set End Date">
+    Click the end date field and select your target completion date.
+  </Step>
+</Steps>
+
+<Tip>
+  You can also drag items directly on the Timeline View to set or adjust dates.
+</Tip>
+
+## Assigning to Product Areas
+
+Link items to product areas for organizational grouping:
+
+1. Open the item details
+2. Click the **Product Area** dropdown
+3. Select from your configured product areas
+
+<Info>
+  Items assigned to product areas will appear in their respective swimlanes on the Timeline View.
+</Info>
+
+## Linking to Strategic Priorities
+
+Connect items to your strategic priorities:
+
+1. Open the item details
+2. Click the **Priority** dropdown
+3. Select a strategic priority
+
+This helps demonstrate how work aligns with your product strategy.
+
+## Creating Child Items
+
+Build hierarchy by adding children to existing items:
+
+1. Open the parent item
+2. Click **Add Child Item**
+3. Select the child item type
+4. Fill in the details
+
+Or use the context menu (right-click) in any view.
+
+<Frame>
+  <img src="/images/placeholder-add-child.png" alt="Add Child Item" />
+  {/* TODO: Add screenshot of adding a child item */}
+</Frame>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Start with Initiatives">
+    Begin by creating high-level initiatives, then break them down into epics and stories.
+  </Accordion>
+  <Accordion title="Use Consistent Naming">
+    Establish naming conventions for your team (e.g., user stories in "As a user..." format).
+  </Accordion>
+  <Accordion title="Always Set Dates">
+    Items without dates won't appear on the timeline. Set at least approximate dates for visibility.
+  </Accordion>
+  <Accordion title="Assign Product Areas">
+    Always assign items to product areas for better organization and filtering.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Item Hierarchy" icon="sitemap" href="/items/item-hierarchy">
+    Learn about parent-child relationships.
+  </Card>
+  <Card title="Editing Items" icon="pen" href="/items/editing-items">
+    Update and manage existing items.
+  </Card>
+</CardGroup>

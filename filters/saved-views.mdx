@@ -1,0 +1,148 @@
+---
+title: "Saved Views"
+description: "Save and manage filter configurations"
+---
+
+## Overview
+
+Saved Views allow you to preserve your filter configurations and quickly switch between different perspectives of your roadmap.
+
+<Frame>
+  <img src="/images/placeholder-saved-views.png" alt="Saved Views" />
+  {/* TODO: Add screenshot of saved views interface */}
+</Frame>
+
+## What is a Saved View?
+
+A saved view captures:
+
+- Current filter settings
+- Grouping configuration
+- View type (Timeline, List, Kanban, Hierarchy)
+
+This allows you to create custom views like:
+
+- "Q1 Initiatives" - Initiatives filtered to Q1 date range
+- "My Team's Work" - Items in specific product areas
+- "Priority: Growth" - Only items aligned to Growth priority
+
+## Creating a Saved View
+
+<Steps>
+  <Step title="Configure Filters">
+    Set up your desired filters and grouping.
+  </Step>
+  <Step title="Save as View">
+    Click **Save as View** in the filter bar or use `Cmd + S`.
+  </Step>
+  <Step title="Name Your View">
+    Enter a descriptive name for the view.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/placeholder-save-view.png" alt="Save View Dialog" />
+  {/* TODO: Add screenshot of save view dialog */}
+</Frame>
+
+## Save as Default View
+
+Make a filter configuration your default:
+
+1. Configure your desired filters
+2. Click **Save as Default View**
+3. These filters are applied automatically when you open the workspace
+
+<Tip>
+  Save as Default View is great for teams that always want to start with a specific focus.
+</Tip>
+
+## Accessing Saved Views
+
+### From Sidebar
+
+1. Look for the **Views** section in the sidebar
+2. Click on a saved view to apply it
+3. Filters and settings are instantly applied
+
+<Frame>
+  <img src="/images/placeholder-views-sidebar.png" alt="Views in Sidebar" />
+  {/* TODO: Add screenshot of views in sidebar */}
+</Frame>
+
+### Quick Switcher
+
+Use keyboard navigation:
+
+1. Press `Cmd + K` / `Ctrl + K` to open quick switcher
+2. Type the view name
+3. Select to apply
+
+## Managing Saved Views
+
+### Editing a View
+
+1. Apply the saved view
+2. Modify filters as needed
+3. Click **Update View** or save with the same name
+
+### Renaming a View
+
+1. Right-click on the view in the sidebar
+2. Select **Rename**
+3. Enter the new name
+
+### Deleting a View
+
+1. Right-click on the view in the sidebar
+2. Select **Delete**
+3. Confirm deletion
+
+<Warning>
+  Deleting a saved view cannot be undone. The view configuration will be lost.
+</Warning>
+
+## Sharing Views
+
+Saved views are workspace-specific:
+
+- All team members with workspace access can see saved views
+- Default view settings apply to all workspace users
+
+<Info>
+  Personal views are planned for a future release.
+</Info>
+
+## Use Cases
+
+| Use Case | Saved View Configuration |
+|----------|-------------------------|
+| **Sprint Planning** | Item Type: Story, Task; Date Range: Next 2 weeks |
+| **Executive Review** | Item Type: Initiative; Grouping: Priority |
+| **Team Focus** | Product Area: [Your Team]; All item types |
+| **Quarterly Review** | Date Range: Current quarter; Grouping: Goal |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Name Descriptively">
+    Use clear names that describe what the view shows: "Q1 Mobile Team" not "View 1".
+  </Accordion>
+  <Accordion title="Create Team Views">
+    Set up shared views for common team workflows and reviews.
+  </Accordion>
+  <Accordion title="Use Default Wisely">
+    Only set a default view if the team always needs to start with specific filters.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Using Filters" icon="filter" href="/filters/using-filters">
+    Learn about available filter options.
+  </Card>
+  <Card title="Timeline View" icon="calendar" href="/views/timeline-view">
+    Create saved views for your timeline.
+  </Card>
+</CardGroup>

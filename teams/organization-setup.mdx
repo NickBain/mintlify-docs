@@ -1,0 +1,129 @@
+---
+title: "Organization Setup"
+description: "Configure your organization settings"
+---
+
+## Overview
+
+Organizations represent your company or team in Wey Roadmap. Organization settings apply across all workspaces and control team membership, billing, and global preferences.
+
+<Frame>
+  <img src="/images/placeholder-organization.png" alt="Organization Settings" />
+  {/* TODO: Add screenshot of organization settings */}
+</Frame>
+
+## Organization vs. Workspace
+
+| Aspect | Organization | Workspace |
+|--------|-------------|-----------|
+| **Scope** | Company-wide | Single roadmap |
+| **Contains** | Workspaces, members, billing | Items, products, priorities |
+| **Example** | "Acme Corp" | "Mobile App Roadmap" |
+
+```
+Organization: Acme Corp
+├── Workspace: Mobile App
+├── Workspace: Web Platform
+└── Workspace: Internal Tools
+```
+
+## Accessing Organization Settings
+
+1. Click your profile avatar or organization name
+2. Select **Organization Settings**
+3. Navigate between settings tabs
+
+<Frame>
+  <img src="/images/placeholder-org-settings.png" alt="Organization Settings Menu" />
+  {/* TODO: Add screenshot of settings menu */}
+</Frame>
+
+## General Settings
+
+Configure basic organization information:
+
+| Setting | Description |
+|---------|-------------|
+| **Name** | Your organization display name |
+| **Logo** | Organization logo for branding |
+
+## Member Management
+
+Control who has access to your organization:
+
+### Inviting Members
+
+<Steps>
+  <Step title="Go to Members">
+    Navigate to Organization Settings > Members.
+  </Step>
+  <Step title="Click Invite">
+    Click the **Invite Member** button.
+  </Step>
+  <Step title="Enter Email">
+    Provide the email address of the person to invite.
+  </Step>
+  <Step title="Send Invite">
+    The invitation is sent via email.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/placeholder-invite-member.png" alt="Invite Member" />
+  {/* TODO: Add screenshot of invite dialog */}
+</Frame>
+
+### Member Roles
+
+| Role | Permissions |
+|------|-------------|
+| **Owner** | Full access, can manage organization and billing |
+| **Admin** | Manage workspaces and members |
+| **Member** | Access to assigned workspaces |
+
+### Removing Members
+
+1. Go to Organization Settings > Members
+2. Find the member in the list
+3. Click **Remove** and confirm
+
+<Warning>
+  Removed members immediately lose access to all workspaces.
+</Warning>
+
+## Security Settings
+
+Configure authentication and security:
+
+- **Single Sign-On (SSO)**: Connect your identity provider
+- **Two-Factor Authentication**: Require 2FA for all members
+- **Session Management**: Control session duration
+
+<Info>
+  Some security features may require a higher plan tier.
+</Info>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Review Access Regularly">
+    Periodically audit member access and remove inactive users.
+  </Accordion>
+  <Accordion title="Use Descriptive Names">
+    Name workspaces clearly so members can find what they need.
+  </Accordion>
+  <Accordion title="Set Up Roles">
+    Assign appropriate roles to maintain security and accountability.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Collaboration" icon="users" href="/teams/collaboration">
+    Work together on roadmaps.
+  </Card>
+  <Card title="Creating Workspaces" icon="folder" href="/workspaces/creating-workspaces">
+    Add workspaces to your organization.
+  </Card>
+</CardGroup>

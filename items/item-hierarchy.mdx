@@ -1,0 +1,177 @@
+---
+title: "Item Hierarchy"
+description: "Organize work with parent-child relationships"
+---
+
+## Overview
+
+Wey Roadmap supports multi-level parent-child relationships between items. This allows you to model complex product structures where work is broken down from strategic initiatives to detailed tasks.
+
+<Frame>
+  <img src="/images/placeholder-item-hierarchy.png" alt="Item Hierarchy Example" />
+  {/* TODO: Add screenshot showing a multi-level hierarchy */}
+</Frame>
+
+## Hierarchy Structure
+
+Items can be nested to any depth:
+
+```
+Initiative: Mobile App Launch
+├── Epic: User Authentication
+│   ├── Story: Login Screen
+│   │   ├── Task: Design login UI
+│   │   └── Task: Implement login API
+│   └── Story: Password Reset
+│       └── Bug: Reset email not sending
+└── Epic: Push Notifications
+    └── Story: Notification Preferences
+```
+
+<Tip>
+  There's no limit to how deep you can nest items. Create the structure that makes sense for your product.
+</Tip>
+
+## Setting Parent-Child Relationships
+
+### When Creating Items
+
+1. Click **+ Add Item** or right-click on a parent item
+2. Select **Add Child Item**
+3. The new item will automatically be linked to the parent
+
+### For Existing Items
+
+1. Open the item you want to assign a parent to
+2. Click the **Parent** field
+3. Search for and select the parent item
+
+<Frame>
+  <img src="/images/placeholder-set-parent.png" alt="Set Parent Item" />
+  {/* TODO: Add screenshot of parent selection */}
+</Frame>
+
+### Via Drag and Drop
+
+In the List View or Hierarchy View:
+
+1. Click and hold on an item
+2. Drag it onto another item
+3. Release to make it a child of that item
+
+## Viewing Hierarchy
+
+### List View
+
+The List View shows hierarchy with indentation:
+
+- Parent items have expand/collapse controls
+- Child items are indented under their parents
+- Use **Expand All** / **Collapse All** buttons for quick navigation
+
+### Hierarchy View
+
+The Hierarchy View displays items as a flow diagram:
+
+- Items appear as nodes
+- Lines connect parents to children
+- Navigate by panning and zooming
+
+### Timeline View
+
+On the timeline, hierarchy is indicated by:
+
+- Grouping under parent swimlanes
+- Visual connection lines (when enabled)
+
+<Frame>
+  <img src="/images/placeholder-hierarchy-timeline.png" alt="Hierarchy on Timeline" />
+  {/* TODO: Add screenshot of hierarchy in timeline view */}
+</Frame>
+
+## Managing Hierarchy
+
+### Removing a Parent
+
+To make an item a top-level item:
+
+1. Open the item details
+2. Click the **Parent** field
+3. Click **Remove** or clear the selection
+
+### Moving Items
+
+To change an item's parent:
+
+1. Open the item details
+2. Click the **Parent** field
+3. Select a different parent item
+
+<Warning>
+  Moving an item also moves all of its children. The entire sub-tree will relocate.
+</Warning>
+
+### Deleting Parent Items
+
+When you delete an item that has children:
+
+- Children become orphaned (top-level items)
+- Or you can choose to delete all descendants
+
+## Typical Hierarchies
+
+### Product Development
+
+```
+Initiative (quarterly goal)
+└── Epic (feature)
+    └── Story (user-facing functionality)
+        └── Task (implementation work)
+            └── Bug (issues found)
+```
+
+### Strategic Planning
+
+```
+Strategic Priority
+└── Goal
+    └── Initiative
+        └── Epic
+```
+
+### Agile Teams
+
+```
+Epic (feature)
+└── Story (user story)
+    ├── Task (dev work)
+    └── Bug (defects)
+```
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Keep Depth Manageable">
+    While unlimited nesting is supported, 3-5 levels is typically ideal for clarity.
+  </Accordion>
+  <Accordion title="Use Consistent Patterns">
+    Establish team conventions for which item types can be children of which parents.
+  </Accordion>
+  <Accordion title="Leverage the Hierarchy View">
+    Regularly review in Hierarchy View to ensure your structure makes sense.
+  </Accordion>
+  <Accordion title="Align with Your Process">
+    Model your hierarchy to match your team's actual planning and execution process.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Hierarchy View" icon="sitemap" href="/views/hierarchy-view">
+    Visualize your hierarchy as a flow diagram.
+  </Card>
+  <Card title="Creating Items" icon="plus" href="/items/creating-items">
+    Add new items to your roadmap.
+  </Card>
+</CardGroup>

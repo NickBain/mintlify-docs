@@ -1,68 +1,94 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Wey Roadmap",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#f43530",
+    "light": "#f77e5e",
+    "dark": "#ec6b2d"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
               "index",
               "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "core-concepts"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "User Guide",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Views",
             "pages": [
-              "api-reference/introduction"
+              "views/timeline-view",
+              "views/list-view",
+              "views/kanban-view",
+              "views/hierarchy-view"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Managing Items",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "items/creating-items",
+              "items/item-hierarchy",
+              "items/editing-items"
+            ]
+          },
+          {
+            "group": "Organization",
+            "pages": [
+              "organization/products",
+              "organization/strategic-priorities",
+              "organization/goals"
+            ]
+          },
+          {
+            "group": "Filters & Views",
+            "pages": [
+              "filters/using-filters",
+              "filters/saved-views"
+            ]
+          },
+          {
+            "group": "Export & Share",
+            "pages": [
+              "sharing/export-options",
+              "sharing/share-links"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Workspaces & Teams",
+        "groups": [
+          {
+            "group": "Workspaces",
+            "pages": [
+              "workspaces/creating-workspaces",
+              "workspaces/switching-workspaces"
+            ]
+          },
+          {
+            "group": "Organizations",
+            "pages": [
+              "teams/organization-setup",
+              "teams/collaboration"
+            ]
+          },
+          {
+            "group": "Data & Sync",
+            "pages": [
+              "data/sync",
+              "data/demo-data"
             ]
           }
         ]
@@ -71,52 +97,33 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Product",
+          "href": "https://www.wey.io",
+          "icon": "rocket"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
+    "light": "/logo/light.png",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@wey.io"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Wey",
+      "href": "https://www.wey.io"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://www.wey.io"
     }
   }
 }
