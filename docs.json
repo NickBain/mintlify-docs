@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Wey Roadmap",
+  "name": "Wey",
   "colors": {
     "primary": "#f43530",
     "light": "#f77e5e",
