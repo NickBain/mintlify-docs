@@ -1,142 +1,172 @@
 ---
 title: "Export Options"
-description: "Export your roadmap as images or PDFs"
+description: "Export your roadmap as images, PDFs, or CSV"
 ---
 
 ## Overview
 
-Share your roadmap with stakeholders by exporting it as an image or PDF. Choose between Timeline and List view formats depending on your audience.
+Share your roadmap with stakeholders by exporting it as an image, PDF, or CSV. The interactive export dialog lets you customize your export with a live preview before downloading.
 
 <Frame>
-  <img src="/images/placeholder-export-menu.png" alt="Export Menu" />
-  {/* TODO: Add screenshot of export menu */}
+  <img src="/images/placeholder-export-dialog.png" alt="Export Dialog" />
+  {/* TODO: Add screenshot of the export dialog with preview */}
 </Frame>
 
 ## Export Formats
 
-### Image Export (PNG)
+| Format | Description | Best For |
+|--------|-------------|----------|
+| **PNG** | High-resolution image | Presentations, embedding in documents |
+| **PDF** | Multi-page document | Printing, formal documentation, email |
+| **CSV** | Spreadsheet data | Analysis, importing to other tools |
 
-- High-resolution image of your roadmap
-- Perfect for presentations and documents
-- Available in Timeline and List view formats
+## Using the Export Dialog
 
-### PDF Export
-
-- Multi-page document for comprehensive sharing
-- Printable format with clear formatting
-- Available in Timeline and List view formats
-
-## View-Specific Exports
-
-### Timeline Format
-
-<Frame>
-  <img src="/images/placeholder-export-timeline.png" alt="Timeline Export" />
-  {/* TODO: Add screenshot of timeline export preview */}
-</Frame>
-
-Exports your roadmap in a Gantt-style layout:
-
-- Items displayed on a timeline
-- Grouped by your current grouping setting
-- Date range and zoom level preserved
-
-Best for:
-- Quarterly/annual planning presentations
-- Stakeholder updates
-- Visual roadmap sharing
-
-### List Format
-
-<Frame>
-  <img src="/images/placeholder-export-list.png" alt="List Export" />
-  {/* TODO: Add screenshot of list export preview */}
-</Frame>
-
-Exports items in a structured list:
-
-- Hierarchical item display
-- All item details visible
-- Sorted and grouped per your settings
-
-Best for:
-- Detailed project documentation
-- Sprint planning documents
-- Complete item inventories
-
-## Exporting Your Roadmap
+The export dialog provides a side-by-side configuration and preview experience:
 
 <Steps>
-  <Step title="Configure Your View">
-    Set filters, grouping, and date range to show exactly what you want to export.
+  <Step title="Open Export">
+    Click the **Export** button in the sidebar or toolbar.
   </Step>
-  <Step title="Open Export Menu">
-    Click the **Export** button in the toolbar.
+  <Step title="Choose Your Lens">
+    Select how items should be grouped in the export (see Lens Options below).
   </Step>
-  <Step title="Select Format">
-    Choose your export format:
-    - **Image (Timeline)** - PNG of timeline view
-    - **Image (List)** - PNG of list view
-    - **PDF (Timeline)** - PDF of timeline view
-    - **PDF (List)** - PDF of list view
+  <Step title="Set Date Range">
+    Choose a time period using presets or custom dates.
   </Step>
-  <Step title="Download">
-    Your export is generated and downloaded automatically.
+  <Step title="Filter Items">
+    Toggle which item types and statuses to include.
+  </Step>
+  <Step title="Preview & Download">
+    Review the live preview, then click **Download** for your preferred format.
   </Step>
 </Steps>
 
-## Export Settings
+## Lens / Grouping Options
 
-Before exporting, you can configure:
+Choose how items are organized in your export, independent of your current view:
 
-| Setting | Description |
-|---------|-------------|
-| **Date Range** | Which time period to include |
-| **Include Completed** | Whether to show completed items |
-| **Item Details** | Level of detail shown (name only, or with dates/status) |
-
-<Frame>
-  <img src="/images/placeholder-export-settings.png" alt="Export Settings" />
-  {/* TODO: Add screenshot of export settings */}
-</Frame>
-
-## Item Information
-
-Exported items display:
-
-- Item name
-- Item type badge (color-coded)
-- Date range (start - end)
-- Strategic priority (if assigned)
-- Status indicator
+| Lens | Description | Audience |
+|------|-------------|----------|
+| **Product Area** | Group by team/area ownership | Team leads, sprint planning |
+| **Strategic Priority** | Group by priority alignment | Executives, strategy reviews |
+| **Goal** | Group by objectives | OKR reviews, goal tracking |
+| **Status** | Group by completion status | Project managers, standups |
+| **Type** | Group by item type | Backlog reviews |
+| **Hierarchy** | Show parent-child relationships | Technical documentation |
 
 <Tip>
-  Apply filters before exporting to create focused views for specific audiences.
+  Use different lenses to create targeted exports for different audiences—an "Executive Summary" using Priority grouping vs. a "Team Backlog" using Status grouping.
 </Tip>
 
-## File Naming
+## Date Range Options
 
-Exported files are named automatically:
+Filter items by time period:
 
-- `roadmap-timeline-2024-01-20.png`
-- `roadmap-list-2024-01-20.pdf`
+| Preset | Description |
+|--------|-------------|
+| **Current Quarter** | Items in the current calendar quarter |
+| **Next 3 Months** | Items starting in the next 90 days |
+| **All Time** | All items regardless of dates |
+| **Custom Range** | Pick specific start and end dates |
 
-The date reflects when the export was created.
+<Frame>
+  <img src="/images/placeholder-date-range.png" alt="Date Range Selector" />
+  {/* TODO: Add screenshot of date range options */}
+</Frame>
+
+## Item Filtering
+
+Control which items appear in your export:
+
+### By Item Type
+Toggle visibility for each type:
+- Initiatives
+- Epics
+- Stories
+- Tasks
+- Bugs
+
+### By Status
+Show or hide items based on their status.
+
+<Info>
+  Filtering lets you create focused exports—for example, showing only Initiatives and Epics for executive summaries.
+</Info>
+
+## Live Preview
+
+The export dialog shows a real-time preview of your export:
+
+- **Instant updates**: Changes to lens, date range, or filters immediately reflect in the preview
+- **Scrollable**: Navigate large roadmaps within the preview panel
+- **Accurate representation**: What you see is exactly what you'll download
+
+<Frame>
+  <img src="/images/placeholder-export-preview.png" alt="Export Preview" />
+  {/* TODO: Add screenshot of live preview panel */}
+</Frame>
+
+## Export Views
+
+### Timeline Export
+
+<Frame>
+  <img src="/images/placeholder-export-timeline.png" alt="Timeline Export" />
+  {/* TODO: Add screenshot of timeline export */}
+</Frame>
+
+Gantt-style layout showing:
+- Items positioned on timeline
+- Grouped by your selected lens
+- Swimlanes with color coding
+- Date headers and gridlines
+
+### List Export
+
+<Frame>
+  <img src="/images/placeholder-export-list.png" alt="List Export" />
+  {/* TODO: Add screenshot of list export */}
+</Frame>
+
+Table-based layout showing:
+- Hierarchical item structure
+- All item details (name, type, dates, status)
+- Grouped by product area
+
+### CSV Export
+
+Spreadsheet export including:
+- All item properties
+- Parent relationships
+- Dates, status, and assignments
+- Ready for further analysis or import
+
+## Export Quality
+
+Exports are generated at high resolution:
+
+- **2x scale** for crisp images on retina displays
+- **Automatic orientation** (landscape/portrait) based on content
+- **Full data fidelity** - items render from source data, not just visible items
 
 ## Best Practices
 
 <AccordionGroup>
-  <Accordion title="Export for Your Audience">
-    Use Timeline format for visual stakeholders, List format for detail-oriented teams.
+  <Accordion title="Match Lens to Audience">
+    Use Strategic Priority for executives, Product Area for team leads, Status for project managers.
   </Accordion>
-  <Accordion title="Apply Filters First">
-    Filter to relevant items before exporting to avoid overwhelming your audience.
+  <Accordion title="Focus with Filters">
+    Hide Tasks and Bugs for high-level presentations. Show all types for detailed planning docs.
   </Accordion>
-  <Accordion title="Use PDF for Documentation">
-    PDFs work better for formal documentation and email attachments.
+  <Accordion title="Use Date Presets">
+    Quick presets like "Current Quarter" save time and ensure consistency.
   </Accordion>
-  <Accordion title="Regular Updates">
-    Schedule regular exports (weekly/monthly) to keep stakeholders informed.
+  <Accordion title="Preview Before Download">
+    Always review the preview to catch any issues before generating the final export.
+  </Accordion>
+  <Accordion title="CSV for Data Work">
+    Use CSV export when you need to analyze data in spreadsheets or import to other tools.
   </Accordion>
 </AccordionGroup>
 
