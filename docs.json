@@ -48,7 +48,9 @@
             "pages": [
               "organization/products",
               "organization/strategic-priorities",
-              "organization/goals"
+              "organization/goals",
+              "organization/releases",
+              "organization/scenarios"
             ]
           },
           {

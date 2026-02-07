@@ -1,0 +1,160 @@
+---
+title: "Releases"
+description: "Organize work into communicative timeboxes for stakeholder alignment"
+---
+
+## Overview
+
+Releases in Wey Roadmap are lightweight, named timeboxes that help you communicate **what** ships **when** to stakeholders. Unlike traditional project management tools, releases are designed for zero-friction planning — they're easy to create, safe to change, and hard to misunderstand.
+
+<Frame>
+  <img src="/images/placeholder-releases-overview.png" alt="Releases Overview" />
+  {/* TODO: Add screenshot of releases in timeline view */}
+</Frame>
+
+<Info>
+  Releases are optional. Items don't need to belong to a release, and you're never forced to create one. They're a framing device for your roadmap, not a rigid delivery container.
+</Info>
+
+## Key Concepts
+
+### Releases Are Communication Artifacts
+
+A release defines a "When" and a "What" without imposing project management overhead:
+
+| Property | Description |
+|----------|-------------|
+| **Name** | A clear label (e.g., "v2.5", "Spring Launch", "Q1 Release") |
+| **Start Date** | Optional — when planning or work begins |
+| **Target Date** | The projected ship or GA date |
+| **Status** | `Planned`, `In Progress`, or `Shipped` |
+| **Confidence** | `On Track`, `At Risk`, or `Uncertain` |
+| **Color** | Visual identifier in swimlanes |
+
+### Confidence Over Progress
+
+Instead of tracking granular percentages or story points, releases use **confidence signals** to capture stakeholder-centric health at a glance:
+
+| Signal | Meaning | Visual |
+|--------|---------|--------|
+| **On Track** | Delivery is on schedule | 🟢 Green |
+| **At Risk** | Some concerns, may need attention | 🟡 Amber |
+| **Uncertain** | Significant unknowns or blockers | 🔴 Red |
+
+<Tip>
+  Confidence signals communicate certainty to stakeholders without requiring detailed status tracking on every item.
+</Tip>
+
+## Managing Releases
+
+### Creating a Release
+
+<Steps>
+  <Step title="Open Release Settings">
+    Click the **Releases** option (flag icon) in the sidebar navigation.
+  </Step>
+  <Step title="Add a New Release">
+    Click **Add Release** and enter a name (e.g., "v2.5" or "Spring Launch").
+  </Step>
+  <Step title="Set Dates">
+    Optionally set a start date and target date to define the timebox.
+  </Step>
+  <Step title="Set Status & Confidence">
+    Choose the current status and confidence level.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/placeholder-release-settings.png" alt="Release Settings Dialog" />
+  {/* TODO: Add screenshot of the Release Settings dialog */}
+</Frame>
+
+### Editing a Release
+
+Open the Release Settings dialog to:
+- Update the name, dates, status, or confidence
+- Change the release color for visual identification
+- Reorder releases by dragging them
+
+### Deleting a Release
+
+Deleting a release unlinks all associated items — they remain in your workspace but are no longer assigned to that release.
+
+## Linking Items to Releases
+
+Items can be associated with zero or one release.
+
+### Assigning via Item Details
+
+<Steps>
+  <Step title="Open an Item">
+    Click on any item to open its detail panel.
+  </Step>
+  <Step title="Select a Release">
+    Use the **Release** dropdown in the item properties to choose from active releases.
+  </Step>
+</Steps>
+
+The release assignment appears directly in the item details with the release's color and status badge.
+
+### Drag & Drop on Timeline
+
+When viewing your roadmap grouped by Release, you can drag items between release swimlanes to reassign them.
+
+<Frame>
+  <img src="/images/placeholder-release-drag.png" alt="Drag items between releases" />
+  {/* TODO: Add screenshot of dragging an item between release lanes */}
+</Frame>
+
+## Release Roadmap View
+
+Releases integrate as a native **grouping dimension** in the layout engine. Select "Release" as your grouping to see:
+
+- **Swimlanes** for each release, ordered by rank
+- **Ungrouped lane** for items not assigned to any release
+- **Color coding** matching each release's assigned color
+- **Timeline positioning** based on item dates
+
+<Frame>
+  <img src="/images/placeholder-release-roadmap.png" alt="Release Roadmap View" />
+  {/* TODO: Add screenshot of timeline grouped by release */}
+</Frame>
+
+### Supported Views
+
+Release grouping works across multiple views:
+
+| View | Release Support |
+|------|----------------|
+| **Timeline** | Swimlanes organized by release |
+| **List** | Items grouped under release headers |
+| **Kanban** | Columns or grouping by release |
+| **Export** | Available as a grouping lens in PNG, PDF, and CSV exports |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Keep Releases Lightweight">
+    Use releases for communication, not strict project management. A release name and target date are often all you need.
+  </Accordion>
+  <Accordion title="Use Confidence Signals">
+    Update confidence regularly to keep stakeholders informed. "At Risk" is more useful than a vague percentage.
+  </Accordion>
+  <Accordion title="Don't Force Every Item Into a Release">
+    Backlog items, ideas, and exploratory work don't need a release. Only assign items when they have a clear delivery window.
+  </Accordion>
+  <Accordion title="Create Audience-Specific Views">
+    Use the Release grouping in exports to create stakeholder-ready roadmap views that focus on delivery timelines.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Timeline View" icon="calendar" href="/views/timeline-view">
+    See releases as swimlanes on the timeline.
+  </Card>
+  <Card title="Export Options" icon="download" href="/sharing/export-options">
+    Export roadmaps grouped by release.
+  </Card>
+</CardGroup>
